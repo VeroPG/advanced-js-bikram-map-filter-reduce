@@ -106,7 +106,7 @@ let result5 = veggie.map((item, i) => {
   }
 });
 
-//6 Dado el array inventory,
+//5 Dado el array inventory,
 // devolver un array con los nombres de los elementos que valgan más de 300 euros
 
 const inventory = [
@@ -195,3 +195,5 @@ const books = [
 let code = books.filter((code) => code.category === "code");
 let precioLibro = code.map((precioCode) => precioCode.price);
 let result9 = precioLibro.reduce((acc, item) => acc + item);
+// .filter((code) => code.category === "code")
+// .reduce((acc, item) => acc + item.price,0);
